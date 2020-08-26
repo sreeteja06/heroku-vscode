@@ -1,4 +1,4 @@
-FROM debian:10
+FROM ubuntu:18.04
 
 RUN apt-get update \
  && apt-get install -y \
@@ -13,7 +13,13 @@ RUN apt-get update \
     ssh \
     sudo \
     vim \
+    python \
+    apt-utils \
+    gnupg \
   && rm -rf /var/lib/apt/lists/*
+
+RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash -
+RUN apt-get -y install nodejs
 
 # https://wiki.debian.org/Locale#Manually
 RUN sed -i "s/# en_US.UTF-8/en_US.UTF-8/" /etc/locale.gen \
