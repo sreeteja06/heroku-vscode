@@ -2,7 +2,7 @@
 This repository contain branch with different versions of Dockerfile and config files for run [code-server](https://github.com/cdr/code-server) (web implementations of [Visual Code](https://code.visualstudio.com/)) on heroku.com
 
 ## Stable version code-server
-Branch [code-server-stable](https://github.com/ivang7/heroku-vscode/tree/code-server-stable)
+Branch [code-server-stable](https://github.com/sreeteja06/heroku-vscode/tree/code-server-stable)
 
 It is lastest stable version of code-server
 
